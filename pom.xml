@@ -11,13 +11,24 @@
     <modules>
         <module>nettyServer</module>
         <module>nettyClient</module>
+        <module>nettyCommon</module>
     </modules>
+    <properties>
+        <nettyServer>${project.version}</nettyServer>
+        <nettyClient>${project.version}</nettyClient>
+        <lombok.version>1.18.16</lombok.version>
+    </properties>
     <dependencies>
         <!-- https://mvnrepository.com/artifact/io.netty/netty-all -->
         <dependency>
             <groupId>io.netty</groupId>
             <artifactId>netty-all</artifactId>
             <version>4.1.55.Final</version>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>${lombok.version}</version>
         </dependency>
 
     </dependencies>
