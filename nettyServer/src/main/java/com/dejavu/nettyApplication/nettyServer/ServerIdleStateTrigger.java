@@ -18,8 +18,8 @@ public class ServerIdleStateTrigger extends ChannelInboundHandlerAdapter {
                     System.out.println(new Date() + " 服务端长时间未收到消息，主动关闭连接!");
                     break;
                 case WRITER_IDLE:
-                    System.out.println(new Date() + " 发送消息【" + Message.PING.toString() + "】");
-                    ctx.channel().writeAndFlush(Message.PING);
+                    //System.out.println(new Date() + " 发送消息【" + Message.PING.toString() + "】");
+                    //ctx.channel().writeAndFlush(Message.PING);
                     break;
             }
         } else {
