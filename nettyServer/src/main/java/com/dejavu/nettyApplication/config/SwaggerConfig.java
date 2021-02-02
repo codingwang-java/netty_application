@@ -10,6 +10,16 @@ import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spring.web.plugins.Docket;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
+import java.security.cert.X509Certificate;
+/**
+ * description：
+ * 
+ * @ClassName SwaggerConfig
+ * @Description swagger配置
+ * @Author DEJAVU
+ * @Date 2021/2/1 23:02
+ * @Version 1.0
+ */
 @Configurable
 @EnableSwagger2
 public class SwaggerConfig {

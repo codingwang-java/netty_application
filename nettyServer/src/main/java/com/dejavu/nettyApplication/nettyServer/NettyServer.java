@@ -16,7 +16,15 @@ import io.netty.util.concurrent.EventExecutor;
 import io.netty.util.concurrent.GlobalEventExecutor;
 
 import java.net.InetSocketAddress;
-
+/**
+ * description：
+ *
+ * @ClassName NettyServer
+ * @Description TODO
+ * @Author DEJAVU
+ * @Date 2021/2/1 0:26
+ * @Version 1.0
+ */
 public class NettyServer {
     private final int port;
     private final ServerBootstrap bootstrap = new ServerBootstrap();
@@ -27,7 +35,7 @@ public class NettyServer {
         this.port = port;
     }
 
-
+    
     public void start() throws InterruptedException {
         bootstrap.group(group)
                 .channel(NioServerSocketChannel.class)
