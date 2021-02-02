@@ -10,11 +10,8 @@
         <module name="nettyCommon" />
         <module name="nettyServer" />
         <module name="nettyClient" />
-        <module name="nettyApplication" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="11">
-      <module name="JarTest" target="1.5" />
-    </bytecodeTargetLevel>
+    <bytecodeTargetLevel target="11" />
   </component>
 </project>
